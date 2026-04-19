@@ -100,7 +100,7 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="relative h-screen min-h-[600px] flex flex-col justify-center overflow-hidden px-6 lg:px-12">
+    <section class="relative min-h-screen flex flex-col justify-center overflow-hidden px-6 lg:px-12">
         <!-- Background -->
         <div class="absolute inset-0 z-0">
             <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&amp;auto=format&amp;fit=crop&amp;w=2070&amp;q=80"
@@ -110,10 +110,10 @@
         </div>
 
         <!-- Content -->
-        <div class="relative z-10 max-w-[1400px] mx-auto w-full flex flex-col justify-center h-full pt-28 pb-8">
+        <div class="relative z-10 max-w-[1400px] mx-auto w-full flex flex-col justify-center min-h-screen pt-24 sm:pt-28 pb-8">
             <div class="max-w-3xl w-full flex flex-col justify-center flex-1">
                 <h1
-                    class="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-white leading-[1.12] mb-6 drop-shadow-md">
+                    class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-white leading-[1.12] mb-6 drop-shadow-md">
                     Eksperci w księgowości.<br class="hidden md:block">
                     Technologia i pewność<br class="hidden md:block">
                     w działaniu.
@@ -144,7 +144,7 @@
                 <p class="text-xs uppercase tracking-widest text-slate-400 mb-4 font-semibold">Zaufało nam ponad <span
                         class="text-white">1200 klientów</span></p>
                 <div
-                    class="flex flex-wrap items-center gap-8 lg:gap-14 opacity-60 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-500">
+                    class="flex flex-wrap items-center gap-5 sm:gap-8 lg:gap-14 opacity-60 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-500">
                     <span
                         class="text-xl lg:text-2xl font-bold tracking-tight text-white uppercase drop-shadow-sm">Streamsoft</span>
                     <span class="text-xl lg:text-2xl font-bold tracking-tight text-white drop-shadow-sm">SITECH</span>
@@ -160,24 +160,24 @@
     </section>
 
     <!-- Bento Grid Section -->
-    <section class="py-24 lg:py-32 px-6 lg:px-12 max-w-[1400px] mx-auto">
-        <div class="text-center mb-16">
+    <section class="py-16 sm:py-20 md:py-24 lg:py-32 px-6 lg:px-12 max-w-[1400px] mx-auto">
+        <div class="text-center mb-10 sm:mb-12 lg:mb-16">
             <span class="text-[#48c279] uppercase tracking-widest text-sm font-bold mb-4 block">Nasze Wartości</span>
-            <h2 class="text-3xl md:text-5xl font-bold tracking-tight max-w-3xl mx-auto text-slate-900">
+            <h2 class="text-2xl sm:text-3xl md:text-5xl font-bold tracking-tight max-w-3xl mx-auto text-slate-900">
                 Dlaczego Meritoros to spokój<br>w Twoim biznesie?
             </h2>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-4 sm:gap-5 md:gap-6">
             <!-- Row 1 -->
             <!-- Card 1: Wzrost i ciągłość -->
             <div
-                class="bg-white border border-slate-200 rounded-[2rem] p-8 lg:p-10 col-span-1 flex flex-col hover:-translate-y-1 hover:shadow-xl hover:shadow-slate-200/50 transition-all duration-300 group">
+                class="bg-white border border-slate-200 rounded-[2rem] p-6 sm:p-8 lg:p-10 col-span-1 flex flex-col hover:-translate-y-1 hover:shadow-xl hover:shadow-slate-200/50 transition-all duration-300 group">
                 <div
                     class="w-14 h-14 bg-slate-50 border border-slate-100 rounded-2xl flex items-center justify-center mb-6 text-[#48c279] group-hover:scale-110 group-hover:bg-[#48c279] group-hover:text-white transition-all duration-300">
                     <i data-lucide="infinity" class="w-7 h-7 stroke-[1.5]"></i>
                 </div>
-                <h3 class="text-2xl font-bold tracking-tight mb-4 text-slate-900">Skala i ciągłość<br>obsługi</h3>
+                <h3 class="text-xl sm:text-2xl font-bold tracking-tight mb-4 text-slate-900">Skala i ciągłość<br>obsługi</h3>
                 <p class="text-lg text-slate-600 leading-relaxed font-light">
                     Pracujemy zespołowo i procesowo, dzięki czemu obsługa nie zależy od jednej osoby. Zapewniamy
                     zastępowalność i ciągłość pracy – bez przestojów.
@@ -203,7 +203,7 @@
 
             <!-- Card 3: Bezpieczeństwo Dark Style -->
             <div
-                class="bg-slate-900 rounded-[2rem] p-8 lg:p-10 text-white col-span-1 flex flex-col hover:-translate-y-1 hover:shadow-xl hover:shadow-slate-900/20 transition-all duration-300 relative overflow-hidden group">
+                class="bg-slate-900 rounded-[2rem] p-6 sm:p-8 lg:p-10 text-white col-span-1 flex flex-col hover:-translate-y-1 hover:shadow-xl hover:shadow-slate-900/20 transition-all duration-300 relative overflow-hidden group">
                 <div
                     class="absolute -right-10 -top-10 w-40 h-40 bg-[#48c279]/20 blur-3xl rounded-full group-hover:bg-[#48c279]/30 transition-colors">
                 </div>
@@ -211,7 +211,7 @@
                     class="w-14 h-14 bg-white/10 rounded-2xl flex items-center justify-center mb-6 text-[#48c279] group-hover:scale-110 transition-transform duration-300">
                     <i data-lucide="shield-check" class="w-7 h-7 stroke-[1.5]"></i>
                 </div>
-                <h3 class="text-2xl font-bold tracking-tight mb-4">Bezpieczeństwo<br>i compliance</h3>
+                <h3 class="text-xl sm:text-2xl font-bold tracking-tight mb-4">Bezpieczeństwo<br>i compliance</h3>
                 <p class="text-lg text-slate-300 leading-relaxed font-light mb-8 relative z-10">
                     Działamy zgodnie z obowiązującymi regulacjami i standardami bezpieczeństwa danych. Dbamy o poufność
                     informacji oraz jasne zasady współpracy - bez "skrótów" i ryzyk.
@@ -221,7 +221,7 @@
             <!-- Row 2 -->
             <!-- Card 4: Technologia Accent Brand -->
             <div
-                class="bg-[#48c279] rounded-[2rem] p-8 lg:p-10 text-white col-span-1 flex flex-col hover:-translate-y-1 hover:shadow-xl hover:shadow-[#48c279]/30 transition-all duration-300 group overflow-hidden relative">
+                class="bg-[#48c279] rounded-[2rem] p-6 sm:p-8 lg:p-10 text-white col-span-1 flex flex-col hover:-translate-y-1 hover:shadow-xl hover:shadow-[#48c279]/30 transition-all duration-300 group overflow-hidden relative">
                 <div
                     class="absolute -right-6 -bottom-6 opacity-10 group-hover:scale-110 group-hover:rotate-6 transition-all duration-500">
                     <i data-lucide="cpu" class="w-40 h-40 stroke-[1]"></i>
@@ -230,7 +230,7 @@
                     class="w-14 h-14 w-fit bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center mb-6 text-white group-hover:scale-110 transition-transform duration-300 relative z-10 px-3.5">
                     <i data-lucide="bot" class="w-7 h-7 stroke-[1.5]"></i>
                 </div>
-                <h3 class="text-2xl font-bold tracking-tight mb-4 relative z-10">Technologia<br>i automatyzacja</h3>
+                <h3 class="text-xl sm:text-2xl font-bold tracking-tight mb-4 relative z-10">Technologia<br>i automatyzacja</h3>
                 <p class="text-lg text-white/90 leading-relaxed font-light relative z-10">
                     Wykorzystujemy narzędzia i automatyzację (RPA), które porządkują obieg dokumentów, ograniczają
                     ryzyko błędów i usprawniają pracę zespołów.
@@ -239,9 +239,9 @@
 
             <!-- Card 5: Nagrody Wide -->
             <div
-                class="bg-white border border-slate-200 rounded-[2rem] p-8 lg:p-10 text-white col-span-1 md:col-span-2 flex flex-col justify-between hover:-translate-y-1 hover:shadow-xl hover:shadow-slate-200/50 transition-all duration-300 group">
+                class="bg-white border border-slate-200 rounded-[2rem] p-6 sm:p-8 lg:p-10 text-white col-span-1 md:col-span-2 flex flex-col justify-between hover:-translate-y-1 hover:shadow-xl hover:shadow-slate-200/50 transition-all duration-300 group">
                 <div>
-                    <h3 class="text-2xl font-bold tracking-tight mb-4 text-slate-900">Nagrody i wyróżnienia</h3>
+                    <h3 class="text-xl sm:text-2xl font-bold tracking-tight mb-4 text-slate-900">Nagrody i wyróżnienia</h3>
                     <p class="text-lg text-slate-600 leading-relaxed max-w-lg font-light">
                         Wyróżnienia są efektem tego, jak rozwijamy Meritoros: konsekwentnie i procesowo. Trzymamy
                         standard, który ma działać w praktyce - codziennie.
@@ -263,12 +263,12 @@
 
             <!-- Card 6: Jakość Focus -->
             <div
-                class="bg-slate-50 border border-slate-200 rounded-[2rem] p-8 lg:p-10 col-span-1 flex flex-col hover:-translate-y-1 hover:shadow-xl hover:shadow-slate-200/50 transition-all duration-300 group">
+                class="bg-slate-50 border border-slate-200 rounded-[2rem] p-6 sm:p-8 lg:p-10 col-span-1 flex flex-col hover:-translate-y-1 hover:shadow-xl hover:shadow-slate-200/50 transition-all duration-300 group">
                 <div
                     class="w-14 h-14 bg-white border border-slate-200 shadow-sm rounded-2xl flex items-center justify-center mb-6 text-[#48c279] group-hover:scale-110 group-hover:rotate-3 transition-transform duration-300">
                     <i data-lucide="award" class="w-7 h-7 stroke-[1.5]"></i>
                 </div>
-                <h3 class="text-2xl font-bold tracking-tight mb-4 text-slate-900">Jakość potwierdzona standardami</h3>
+                <h3 class="text-xl sm:text-2xl font-bold tracking-tight mb-4 text-slate-900">Jakość potwierdzona standardami</h3>
                 <p class="text-lg text-slate-600 leading-relaxed mb-10 font-light">
                     Mamy wdrożone procedury kontroli jakości i weryfikacji danych. Dostarczamy spójne dane dla zarządu.
                 </p>
@@ -286,12 +286,12 @@
     </section>
 
     <!-- Services Section -->
-    <section class="py-24 lg:py-32 px-6 lg:px-12 bg-slate-50 border-t border-slate-100">
+    <section class="py-16 sm:py-20 md:py-24 lg:py-32 px-6 lg:px-12 bg-slate-50 border-t border-slate-100">
         <div class="max-w-[1400px] mx-auto">
-            <div class="max-w-3xl mb-16">
+            <div class="max-w-3xl mb-10 sm:mb-12 lg:mb-16">
                 <span class="text-[#48c279] uppercase tracking-widest text-sm font-bold mb-4 block">Nasze
                     Kompetencje</span>
-                <h2 class="text-3xl lg:text-5xl font-bold tracking-tight mb-6 text-slate-900">
+                <h2 class="text-2xl sm:text-3xl lg:text-5xl font-bold tracking-tight mb-6 text-slate-900">
                     Obszary, w których przejmujemy odpowiedzialność
                 </h2>
                 <p class="text-lg text-slate-600 leading-relaxed font-light">
@@ -305,7 +305,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <!-- Card 1 -->
                 <a href="#"
-                    class="bg-white border border-slate-200 rounded-[2rem] p-8 lg:p-10 hover:-translate-y-1 hover:shadow-xl hover:shadow-slate-200/50 transition-all duration-300 flex flex-col h-[320px] group relative overflow-hidden">
+                    class="bg-white border border-slate-200 rounded-[2rem] p-6 sm:p-8 lg:p-10 hover:-translate-y-1 hover:shadow-xl hover:shadow-slate-200/50 transition-all duration-300 flex flex-col min-h-[260px] sm:min-h-[300px] md:h-[320px] group relative overflow-hidden">
                     <div
                         class="w-14 h-14 bg-slate-50 border border-slate-100 rounded-2xl flex items-center justify-center mb-8 text-[#48c279] group-hover:scale-110 group-hover:rotate-3 transition-all duration-300">
                         <i data-lucide="calculator" class="w-7 h-7 stroke-[1.5]"></i>
@@ -314,14 +314,14 @@
                         class="absolute top-8 right-8 w-10 h-10 rounded-full border border-slate-100 bg-slate-50 flex items-center justify-center opacity-0 -translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300 text-slate-400 group-hover:text-[#48c279]">
                         <i data-lucide="arrow-right" class="w-5 h-5 stroke-[2]"></i>
                     </div>
-                    <h3 class="text-2xl font-bold tracking-tight mb-4 mt-auto text-slate-900">Usługi Rachunkowe</h3>
+                    <h3 class="text-xl sm:text-2xl font-bold tracking-tight mb-4 mt-auto text-slate-900">Usługi Rachunkowe</h3>
                     <p class="text-lg text-slate-600 font-light leading-relaxed">Kompleksowa obsługa księgowa firm o
                         różnej skali działalności.</p>
                 </a>
 
                 <!-- Card 2 -->
                 <a href="#"
-                    class="bg-white border border-slate-200 rounded-[2rem] p-8 lg:p-10 hover:-translate-y-1 hover:shadow-xl hover:shadow-slate-200/50 transition-all duration-300 flex flex-col h-[320px] group relative overflow-hidden">
+                    class="bg-white border border-slate-200 rounded-[2rem] p-6 sm:p-8 lg:p-10 hover:-translate-y-1 hover:shadow-xl hover:shadow-slate-200/50 transition-all duration-300 flex flex-col min-h-[260px] sm:min-h-[300px] md:h-[320px] group relative overflow-hidden">
                     <div
                         class="w-14 h-14 bg-slate-50 border border-slate-100 rounded-2xl flex items-center justify-center mb-8 text-[#48c279] group-hover:scale-110 group-hover:-rotate-3 transition-all duration-300">
                         <i data-lucide="network" class="w-7 h-7 stroke-[1.5]"></i>
@@ -330,14 +330,14 @@
                         class="absolute top-8 right-8 w-10 h-10 rounded-full border border-[#48c279]/20 bg-[#48c279]/10 flex items-center justify-center text-[#48c279] group-hover:scale-110 group-hover:bg-[#48c279] group-hover:text-white transition-all duration-300">
                         <i data-lucide="arrow-up-right" class="w-5 h-5 stroke-[2]"></i>
                     </div>
-                    <h3 class="text-2xl font-bold tracking-tight mb-4 mt-auto text-slate-900">BPO</h3>
+                    <h3 class="text-xl sm:text-2xl font-bold tracking-tight mb-4 mt-auto text-slate-900">BPO</h3>
                     <p class="text-lg text-slate-600 font-light leading-relaxed">Outsourcing wybranych lub pełnych
                         procesów finansowych i administracyjnych dla większych firm.</p>
                 </a>
 
                 <!-- Card 3 -->
                 <a href="#"
-                    class="bg-white border border-slate-200 rounded-[2rem] p-8 lg:p-10 hover:-translate-y-1 hover:shadow-xl hover:shadow-slate-200/50 transition-all duration-300 flex flex-col h-[320px] group relative overflow-hidden">
+                    class="bg-white border border-slate-200 rounded-[2rem] p-6 sm:p-8 lg:p-10 hover:-translate-y-1 hover:shadow-xl hover:shadow-slate-200/50 transition-all duration-300 flex flex-col min-h-[260px] sm:min-h-[300px] md:h-[320px] group relative overflow-hidden">
                     <div
                         class="w-14 h-14 bg-slate-50 border border-slate-100 rounded-2xl flex items-center justify-center mb-8 text-[#48c279] group-hover:scale-110 group-hover:rotate-3 transition-all duration-300">
                         <i data-lucide="file-text" class="w-7 h-7 stroke-[1.5]"></i>
@@ -346,14 +346,14 @@
                         class="absolute top-8 right-8 w-10 h-10 rounded-full border border-slate-100 bg-slate-50 flex items-center justify-center opacity-0 -translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300 text-slate-400 group-hover:text-[#48c279]">
                         <i data-lucide="arrow-right" class="w-5 h-5 stroke-[2]"></i>
                     </div>
-                    <h3 class="text-2xl font-bold tracking-tight mb-4 mt-auto text-slate-900">Usługi Kadrowe</h3>
+                    <h3 class="text-xl sm:text-2xl font-bold tracking-tight mb-4 mt-auto text-slate-900">Usługi Kadrowe</h3>
                     <p class="text-lg text-slate-600 font-light leading-relaxed">Obsługa kadrowo-płacowa dopasowana do
                         potrzeb organizacji.</p>
                 </a>
 
                 <!-- Card 4 -->
                 <a href="#"
-                    class="bg-white border border-slate-200 rounded-[2rem] p-8 lg:p-10 hover:-translate-y-1 hover:shadow-xl hover:shadow-slate-200/50 transition-all duration-300 flex flex-col h-[320px] group relative overflow-hidden">
+                    class="bg-white border border-slate-200 rounded-[2rem] p-6 sm:p-8 lg:p-10 hover:-translate-y-1 hover:shadow-xl hover:shadow-slate-200/50 transition-all duration-300 flex flex-col min-h-[260px] sm:min-h-[300px] md:h-[320px] group relative overflow-hidden">
                     <div
                         class="w-14 h-14 bg-slate-50 border border-slate-100 rounded-2xl flex items-center justify-center mb-8 text-[#48c279] group-hover:scale-110 group-hover:-rotate-3 transition-all duration-300">
                         <i data-lucide="heart-handshake" class="w-7 h-7 stroke-[1.5]"></i>
@@ -362,14 +362,14 @@
                         class="absolute top-8 right-8 w-10 h-10 rounded-full border border-slate-100 bg-slate-50 flex items-center justify-center opacity-0 -translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300 text-slate-400 group-hover:text-[#48c279]">
                         <i data-lucide="arrow-right" class="w-5 h-5 stroke-[2]"></i>
                     </div>
-                    <h3 class="text-2xl font-bold tracking-tight mb-4 mt-auto text-slate-900">Fundacje rodzinne</h3>
+                    <h3 class="text-xl sm:text-2xl font-bold tracking-tight mb-4 mt-auto text-slate-900">Fundacje rodzinne</h3>
                     <p class="text-lg text-slate-600 font-light leading-relaxed">Obsługa rachunkowa fundacji z
                         uwzględnieniem specyfiki regulacyjnej.</p>
                 </a>
 
                 <!-- Card 5 -->
                 <a href="#"
-                    class="bg-white border border-slate-200 rounded-[2rem] p-8 lg:p-10 hover:-translate-y-1 hover:shadow-xl hover:shadow-slate-200/50 transition-all duration-300 flex flex-col h-[320px] group relative overflow-hidden">
+                    class="bg-white border border-slate-200 rounded-[2rem] p-6 sm:p-8 lg:p-10 hover:-translate-y-1 hover:shadow-xl hover:shadow-slate-200/50 transition-all duration-300 flex flex-col min-h-[260px] sm:min-h-[300px] md:h-[320px] group relative overflow-hidden">
                     <div
                         class="w-14 h-14 bg-slate-50 border border-slate-100 rounded-2xl flex items-center justify-center mb-8 text-[#48c279] group-hover:scale-110 group-hover:rotate-3 transition-all duration-300">
                         <i data-lucide="cpu" class="w-7 h-7 stroke-[1.5]"></i>
@@ -378,14 +378,14 @@
                         class="absolute top-8 right-8 w-10 h-10 rounded-full border border-slate-100 bg-slate-50 flex items-center justify-center opacity-0 -translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300 text-slate-400 group-hover:text-[#48c279]">
                         <i data-lucide="arrow-right" class="w-5 h-5 stroke-[2]"></i>
                     </div>
-                    <h3 class="text-2xl font-bold tracking-tight mb-4 mt-auto text-slate-900">Transformacja Cyfrowa</h3>
+                    <h3 class="text-xl sm:text-2xl font-bold tracking-tight mb-4 mt-auto text-slate-900">Transformacja Cyfrowa</h3>
                     <p class="text-lg text-slate-600 font-light leading-relaxed">Wsparcie we wdrażaniu narzędzi,
                         automatyzacji i usprawnianiu procesów biznesowych.</p>
                 </a>
 
                 <!-- Card 6 CTA -->
                 <a href="#"
-                    class="bg-[#48c279] rounded-[2rem] p-8 lg:p-10 hover:-translate-y-1 hover:shadow-xl hover:shadow-[#48c279]/30 transition-all duration-300 flex flex-col items-center justify-center text-center text-white h-[320px] group relative overflow-hidden">
+                    class="bg-[#48c279] rounded-[2rem] p-6 sm:p-8 lg:p-10 hover:-translate-y-1 hover:shadow-xl hover:shadow-[#48c279]/30 transition-all duration-300 flex flex-col items-center justify-center text-center text-white min-h-[260px] sm:min-h-[300px] md:h-[320px] group relative overflow-hidden">
                     <div
                         class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-white/20 via-transparent to-transparent">
                     </div>
@@ -406,7 +406,7 @@
 
     <!-- Case Studies Section -->
     <section
-        class="h-screen min-h-[600px] overflow-hidden px-6 lg:px-12 bg-white flex flex-col justify-center py-10 lg:py-12">
+        class="overflow-hidden px-6 lg:px-12 bg-white flex flex-col justify-center py-14 sm:py-16 lg:py-0 lg:h-screen lg:min-h-[700px]">
         <div class="max-w-[1400px] mx-auto w-full flex flex-col h-full justify-center">
             <!-- Header and Navigation -->
             <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
@@ -443,7 +443,7 @@
 
                         <!-- Content Box -->
                         <div
-                            class="bg-slate-50 border border-slate-100 rounded-[2.5rem] p-7 lg:p-10 order-2 lg:order-1 relative overflow-hidden group flex flex-col h-full justify-center">
+                            class="bg-slate-50 border border-slate-100 rounded-[2.5rem] p-6 sm:p-8 lg:p-10 order-2 lg:order-1 relative overflow-hidden group flex flex-col h-full justify-center">
                             <!-- Background Accent -->
                             <div class="absolute -top-10 -right-10 w-40 h-40 bg-white blur-3xl opacity-50 rounded-full">
                             </div>
@@ -498,7 +498,7 @@
 
                         <!-- Visual/Video Side -->
                         <div
-                            class="relative rounded-[2.5rem] overflow-hidden group cursor-pointer aspect-[4/3] lg:aspect-auto lg:h-full min-h-[400px] shadow-sm order-1 lg:order-2">
+                            class="relative rounded-[2.5rem] overflow-hidden group cursor-pointer aspect-[4/3] lg:aspect-auto lg:h-full min-h-[280px] sm:min-h-[360px] shadow-sm order-1 lg:order-2">
                             <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80"
                                 alt="Customer Video"
                                 class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
@@ -529,7 +529,7 @@
                     <!-- Slide 2: Printbox -->
                     <div class="min-w-full grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-10 items-center h-full">
                         <div
-                            class="bg-slate-50 border border-slate-100 rounded-[2.5rem] p-7 lg:p-10 order-2 lg:order-1 relative overflow-hidden flex flex-col h-full justify-center">
+                            class="bg-slate-50 border border-slate-100 rounded-[2.5rem] p-6 sm:p-8 lg:p-10 order-2 lg:order-1 relative overflow-hidden flex flex-col h-full justify-center">
                             <div class="absolute -top-10 -right-10 w-40 h-40 bg-white blur-3xl opacity-50 rounded-full">
                             </div>
                             <div class="flex items-center gap-3 mb-6">
@@ -570,7 +570,7 @@
                             </a>
                         </div>
                         <div
-                            class="relative rounded-[2.5rem] overflow-hidden group cursor-pointer aspect-[4/3] lg:aspect-auto lg:h-full min-h-[400px] shadow-sm order-1 lg:order-2">
+                            class="relative rounded-[2.5rem] overflow-hidden group cursor-pointer aspect-[4/3] lg:aspect-auto lg:h-full min-h-[280px] sm:min-h-[360px] shadow-sm order-1 lg:order-2">
                             <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80"
                                 alt="Printbox team"
                                 class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
@@ -595,7 +595,7 @@
                     <!-- Slide 3: SITECH -->
                     <div class="min-w-full grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-10 items-center h-full">
                         <div
-                            class="bg-slate-50 border border-slate-100 rounded-[2.5rem] p-7 lg:p-10 order-2 lg:order-1 relative overflow-hidden flex flex-col h-full justify-center">
+                            class="bg-slate-50 border border-slate-100 rounded-[2.5rem] p-6 sm:p-8 lg:p-10 order-2 lg:order-1 relative overflow-hidden flex flex-col h-full justify-center">
                             <div class="absolute -top-10 -right-10 w-40 h-40 bg-white blur-3xl opacity-50 rounded-full">
                             </div>
                             <div class="flex items-center gap-3 mb-6">
@@ -630,7 +630,7 @@
                             </a>
                         </div>
                         <div
-                            class="relative rounded-[2.5rem] overflow-hidden group cursor-pointer aspect-[4/3] lg:aspect-auto lg:h-full min-h-[400px] shadow-sm order-1 lg:order-2">
+                            class="relative rounded-[2.5rem] overflow-hidden group cursor-pointer aspect-[4/3] lg:aspect-auto lg:h-full min-h-[280px] sm:min-h-[360px] shadow-sm order-1 lg:order-2">
                             <img src="https://images.unsplash.com/photo-1560179707-f14e90ef3623?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80"
                                 alt="SITECH office"
                                 class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
@@ -655,7 +655,7 @@
                     <!-- Slide 4: ROFA -->
                     <div class="min-w-full grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-10 items-center h-full">
                         <div
-                            class="bg-slate-50 border border-slate-100 rounded-[2.5rem] p-7 lg:p-10 order-2 lg:order-1 relative overflow-hidden flex flex-col h-full justify-center">
+                            class="bg-slate-50 border border-slate-100 rounded-[2.5rem] p-6 sm:p-8 lg:p-10 order-2 lg:order-1 relative overflow-hidden flex flex-col h-full justify-center">
                             <div class="absolute -top-10 -right-10 w-40 h-40 bg-white blur-3xl opacity-50 rounded-full">
                             </div>
                             <div class="flex items-center gap-3 mb-6">
@@ -694,7 +694,7 @@
                             </a>
                         </div>
                         <div
-                            class="relative rounded-[2.5rem] overflow-hidden group cursor-pointer aspect-[4/3] lg:aspect-auto lg:h-full min-h-[400px] shadow-sm order-1 lg:order-2">
+                            class="relative rounded-[2.5rem] overflow-hidden group cursor-pointer aspect-[4/3] lg:aspect-auto lg:h-full min-h-[280px] sm:min-h-[360px] shadow-sm order-1 lg:order-2">
                             <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80"
                                 alt="ROFA production"
                                 class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
@@ -734,7 +734,7 @@
 
     <!-- Testimonials Section -->
     <section
-        class="h-screen min-h-[600px] overflow-hidden px-6 lg:px-12 bg-slate-50 flex flex-col justify-center py-8 lg:py-10">
+        class="overflow-hidden px-6 lg:px-12 bg-slate-50 flex flex-col justify-center py-14 sm:py-16 lg:py-0 lg:h-screen lg:min-h-[700px]">
         <div class="max-w-[1400px] mx-auto w-full">
             <!-- Header -->
             <div class="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
@@ -757,7 +757,7 @@
 
                 <!-- Card 1 -->
                 <div
-                    class="bg-white border border-slate-200 rounded-[2rem] p-6 lg:p-8 flex flex-col justify-between hover:-translate-y-1 hover:shadow-xl hover:shadow-slate-200/50 transition-all duration-300">
+                    class="bg-white border border-slate-200 rounded-[2rem] p-5 sm:p-6 lg:p-8 flex flex-col justify-between hover:-translate-y-1 hover:shadow-xl hover:shadow-slate-200/50 transition-all duration-300">
                     <div>
                         <div class="flex items-center gap-1 mb-6">
                             <i data-lucide="star" class="w-5 h-5 fill-[#48c279] text-[#48c279] stroke-none"></i>
@@ -821,7 +821,7 @@
 
                 <!-- Card 3 -->
                 <div
-                    class="bg-white border border-slate-200 rounded-[2rem] p-6 lg:p-8 flex flex-col justify-between hover:-translate-y-1 hover:shadow-xl hover:shadow-slate-200/50 transition-all duration-300">
+                    class="bg-white border border-slate-200 rounded-[2rem] p-5 sm:p-6 lg:p-8 flex flex-col justify-between hover:-translate-y-1 hover:shadow-xl hover:shadow-slate-200/50 transition-all duration-300">
                     <div>
                         <div class="flex items-center gap-1 mb-4">
                             <i data-lucide="star" class="w-4 h-4 fill-[#48c279] text-[#48c279] stroke-none"></i>
@@ -874,10 +874,10 @@
     </section>
 
     <!-- Buyout Banner Section + Tech Logos -->
-    <section class="py-20 lg:py-28 px-6 lg:px-12 bg-white">
+    <section class="py-16 sm:py-20 md:py-24 lg:py-28 px-6 lg:px-12 bg-white">
         <div class="max-w-[1400px] mx-auto">
             <!-- Banner -->
-            <div class="relative rounded-[3rem] overflow-hidden">
+            <div class="relative rounded-[2rem] sm:rounded-[3rem] overflow-hidden">
                 <!-- Background Image -->
                 <div class="absolute inset-0">
                     <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80"
@@ -887,7 +887,7 @@
                 </div>
 
                 <!-- Content -->
-                <div class="relative z-10 p-10 lg:p-16 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="relative z-10 p-7 sm:p-10 lg:p-16 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                     <!-- Text -->
                     <div class="text-white">
                         <span class="text-[#48c279] uppercase tracking-widest text-sm font-bold mb-4 block">Dla biur
@@ -981,7 +981,7 @@
     </section>
 
     <!-- Blog Section -->
-    <section class="py-24 lg:py-32 px-6 lg:px-12 bg-slate-50 border-t border-slate-100">
+    <section class="py-16 sm:py-20 md:py-24 lg:py-32 px-6 lg:px-12 bg-slate-50 border-t border-slate-100">
         <div class="max-w-[1400px] mx-auto">
             <!-- Header -->
             <div class="flex flex-col md:flex-row md:items-end justify-between mb-14 gap-6">
@@ -1005,7 +1005,7 @@
                 <article
                     class="lg:col-span-3 group cursor-pointer flex flex-col bg-white border border-slate-200 rounded-[2.5rem] overflow-hidden hover:-translate-y-1 hover:shadow-xl hover:shadow-slate-200/60 transition-all duration-300">
                     <!-- Image -->
-                    <div class="relative overflow-hidden aspect-[16/9]">
+                    <div class="relative overflow-hidden aspect-[3/2] sm:aspect-[16/9]">
                         <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/917d6f93-fb36-439a-8c48-884b67b35381_1600w.jpg"
                             alt="Potrącenia z zasiłków"
                             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
@@ -1019,7 +1019,7 @@
                         </div>
                     </div>
                     <!-- Content -->
-                    <div class="p-8 lg:p-10 flex flex-col flex-1">
+                    <div class="p-6 sm:p-8 lg:p-10 flex flex-col flex-1">
                         <div class="flex items-center gap-4 text-xs text-slate-400 font-medium mb-5">
                             <span class="flex items-center gap-1.5"><i data-lucide="calendar"
                                     class="w-3.5 h-3.5 stroke-[2]"></i> 12 kwietnia 2026</span>
@@ -1027,7 +1027,7 @@
                                     class="w-3.5 h-3.5 stroke-[2]"></i> 5 min czytania</span>
                         </div>
                         <h3
-                            class="text-2xl lg:text-3xl font-bold tracking-tight text-slate-900 mb-4 leading-snug group-hover:text-[#48c279] transition-colors duration-300">
+                            class="text-xl sm:text-2xl lg:text-3xl font-bold tracking-tight text-slate-900 mb-4 leading-snug group-hover:text-[#48c279] transition-colors duration-300">
                             Potrącenia z zasiłków w 2026 r. Praktyczny przewodnik dla działów kadr
                         </h3>
                         <p class="text-base text-slate-600 font-light leading-relaxed mb-8 line-clamp-3">
@@ -1064,7 +1064,7 @@
                                 </span>
                             </div>
                         </div>
-                        <div class="p-6 lg:p-8 flex flex-col flex-1">
+                        <div class="p-5 sm:p-6 lg:p-8 flex flex-col flex-1">
                             <div class="flex items-center gap-3 text-xs text-slate-400 font-medium mb-4">
                                 <span class="flex items-center gap-1"><i data-lucide="calendar"
                                         class="w-3 h-3 stroke-[2]"></i> 3 marca 2026</span>
@@ -1101,7 +1101,7 @@
                                 </span>
                             </div>
                         </div>
-                        <div class="p-6 lg:p-8 flex flex-col flex-1">
+                        <div class="p-5 sm:p-6 lg:p-8 flex flex-col flex-1">
                             <div class="flex items-center gap-3 text-xs text-slate-400 font-medium mb-4">
                                 <span class="flex items-center gap-1"><i data-lucide="calendar"
                                         class="w-3 h-3 stroke-[2]"></i> 18 lutego 2026</span>
@@ -1129,12 +1129,12 @@
     </section>
 
     <!-- Newsletter Section -->
-    <section class="py-20 lg:py-28 px-6 lg:px-12 bg-white border-t border-slate-100">
+    <section class="py-16 sm:py-20 md:py-24 lg:py-28 px-6 lg:px-12 bg-white border-t border-slate-100">
         <div class="max-w-[1400px] mx-auto">
-            <div class="bg-slate-900 rounded-[3rem] overflow-hidden grid grid-cols-1 lg:grid-cols-2">
+            <div class="bg-slate-900 rounded-[2rem] sm:rounded-[3rem] overflow-hidden grid grid-cols-1 lg:grid-cols-2">
 
                 <!-- Left: Branding + Benefits -->
-                <div class="relative p-10 lg:p-16 flex flex-col justify-between overflow-hidden">
+                <div class="relative p-7 sm:p-10 lg:p-16 flex flex-col justify-between overflow-hidden">
                     <!-- Background decoration -->
                     <div
                         class="absolute -bottom-16 -left-16 w-72 h-72 rounded-full bg-[#48c279]/10 blur-3xl pointer-events-none">
@@ -1221,7 +1221,7 @@
                 </div>
 
                 <!-- Right: Form -->
-                <div class="bg-white p-10 lg:p-16 flex flex-col justify-center">
+                <div class="bg-white p-7 sm:p-10 lg:p-16 flex flex-col justify-center">
                     <h3 class="text-2xl font-bold tracking-tight text-slate-900 mb-2">Zapisz się bezpłatnie</h3>
                     <p class="text-slate-500 text-sm font-light mb-8">Dołącz do ponad 2 400 specjalistów finansowych.
                     </p>
@@ -1295,11 +1295,11 @@
 
             <!-- CTA Banner inside footer -->
             <div
-                class="border-b border-white/10 py-16 lg:py-20 flex flex-col lg:flex-row lg:items-center justify-between gap-10">
+                class="border-b border-white/10 py-12 sm:py-16 lg:py-20 flex flex-col lg:flex-row lg:items-center justify-between gap-8 sm:gap-10">
                 <div class="max-w-2xl">
                     <span class="text-[#48c279] uppercase tracking-widest text-sm font-bold mb-4 block">Zacznij
                         teraz</span>
-                    <h2 class="text-3xl md:text-5xl font-bold tracking-tight leading-tight">
+                    <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight leading-tight">
                         Dołącz do grona naszych<br>klientów i rozwijaj biznes<br><span class="text-[#48c279]">bez
                             stresu</span>
                     </h2>
@@ -1318,7 +1318,7 @@
             </div>
 
             <!-- Links grid -->
-            <div class="py-14 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-10">
+            <div class="py-10 sm:py-12 lg:py-14 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6 sm:gap-8 lg:gap-10">
 
                 <!-- Brand col -->
                 <div class="col-span-2 md:col-span-4 lg:col-span-1 flex flex-col gap-6">
