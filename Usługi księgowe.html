@@ -1,0 +1,921 @@
+<html lang="pl"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MERITOROS - Usługi księgowe</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&amp;display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="text-slate-900 antialiased bg-white selection:bg-emerald-100 selection:text-emerald-900">
+
+    <!-- Header / Nav -->
+    <header class="absolute top-6 left-0 right-0 z-50 px-6 lg:px-12 w-full max-w-[1400px] mx-auto">
+        <div class="bg-[#f2f4f6]/70 backdrop-blur-md rounded-full px-4 py-3 flex justify-between items-center shadow-lg shadow-black/5">
+            <a href="index.html" class="flex items-center pl-4">
+                <img src="logo.svg" alt="Meritoros" class="h-8 w-auto">
+            </a>
+            <nav class="hidden lg:flex items-center gap-8 text-slate-900 text-[15px] font-medium">
+                <div class="relative group">
+                    <a href="#" class="flex items-center gap-1.5 hover:text-slate-600 transition-colors py-4 -my-4 cursor-pointer">
+                        Biuro rachunkowe <i data-lucide="chevron-down" class="w-4 h-4 text-[#48c279] stroke-[1.5]"></i>
+                    </a>
+                    <div class="absolute top-full left-1/2 -translate-x-1/2 pt-6 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all z-50 w-[260px]">
+                        <div class="bg-[#f2f4f6] rounded-[2rem] p-7 flex flex-col gap-5 shadow-xl shadow-black/5 border border-white/60">
+                            <a href="Usługi księgowe.html" class="flex items-center justify-between text-slate-900 hover:text-slate-600 group/item transition-colors">
+                                <span class="text-[15px]">Usługi księgowe</span>
+                                <i data-lucide="arrow-up-right" class="w-5 h-5 text-[#48c279] stroke-[1.5] group-hover/item:translate-x-0.5 group-hover/item:-translate-y-0.5 transition-transform"></i>
+                            </a>
+                            <a href="#" class="flex items-center justify-between text-slate-900 hover:text-slate-600 group/item transition-colors">
+                                <span class="text-[15px]">Kadry i płace</span>
+                                <i data-lucide="arrow-up-right" class="w-5 h-5 text-[#48c279] stroke-[1.5] group-hover/item:translate-x-0.5 group-hover/item:-translate-y-0.5 transition-transform"></i>
+                            </a>
+                            <a href="Fundacje rodzinne.html" class="flex items-center justify-between text-slate-900 hover:text-slate-600 group/item transition-colors">
+                                <span class="text-[15px]">Fundacje rodzinne</span>
+                                <i data-lucide="arrow-up-right" class="w-5 h-5 text-[#48c279] stroke-[1.5] group-hover/item:translate-x-0.5 group-hover/item:-translate-y-0.5 transition-transform"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative group">
+                    <a href="bpo.html" class="flex items-center gap-1.5 hover:text-slate-600 transition-colors py-4 -my-4 cursor-pointer">
+                        BPO <i data-lucide="chevron-down" class="w-4 h-4 text-[#48c279] stroke-[1.5]"></i>
+                    </a>
+                </div>
+                <div class="relative group">
+                    <a href="O nas.html" class="flex items-center gap-1.5 hover:text-slate-600 transition-colors py-4 -my-4 cursor-pointer">
+                        O nas <i data-lucide="chevron-down" class="w-4 h-4 text-[#48c279] stroke-[1.5]"></i>
+                    </a>
+                </div>
+                <div class="relative group">
+                    <a href="#" class="flex items-center gap-1.5 hover:text-slate-600 transition-colors py-4 -my-4 cursor-pointer">
+                        Odkryj <i data-lucide="chevron-down" class="w-4 h-4 text-[#48c279] stroke-[1.5]"></i>
+                    </a>
+                </div>
+                <a href="#" class="hover:text-slate-600 transition-colors">Kariera</a>
+                <a href="#" class="hover:text-slate-600 transition-colors">Kontakt</a>
+            </nav>
+            <div class="hidden lg:block pr-2">
+                <a href="#" class="bg-[#48c279] text-white px-7 py-3 rounded-full text-[15px] font-medium hover:bg-[#3ea868] transition-colors">Umów rozmowę</a>
+            </div>
+            <button class="lg:hidden text-slate-900 pr-4"><i data-lucide="menu" class="w-7 h-7 stroke-[1.5]"></i></button>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="relative bg-[#eef8f2] overflow-hidden pt-36 pb-16">
+
+        <!-- Decorative illustration — spreadsheet/ledger -->
+        <div class="absolute right-0 top-1/2 -translate-y-1/2 w-[460px] h-[460px] opacity-10 pointer-events-none pr-12 hidden lg:flex items-center justify-center">
+            <svg viewBox="0 0 300 280" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-full stroke-emerald-600" stroke-width="3">
+                <!-- Document outline -->
+                <rect x="40" y="20" width="220" height="240" rx="12"/>
+                <!-- Header row -->
+                <line x1="40" y1="60" x2="260" y2="60"/>
+                <!-- Column dividers -->
+                <line x1="120" y1="60" x2="120" y2="260"/>
+                <line x1="190" y1="60" x2="190" y2="260"/>
+                <!-- Row lines -->
+                <line x1="40" y1="100" x2="260" y2="100"/>
+                <line x1="40" y1="140" x2="260" y2="140"/>
+                <line x1="40" y1="180" x2="260" y2="180"/>
+                <line x1="40" y1="220" x2="260" y2="220"/>
+                <!-- Checkboxes col 2 -->
+                <rect x="133" y="72" width="20" height="20" rx="4"/>
+                <polyline points="137,82 141,87 151,77"/>
+                <rect x="133" y="112" width="20" height="20" rx="4"/>
+                <rect x="133" y="152" width="20" height="20" rx="4"/>
+                <polyline points="137,162 141,167 151,157"/>
+                <rect x="133" y="192" width="20" height="20" rx="4"/>
+                <!-- Checkboxes col 3 -->
+                <rect x="203" y="72" width="20" height="20" rx="4"/>
+                <rect x="203" y="112" width="20" height="20" rx="4"/>
+                <polyline points="207,122 211,127 221,117"/>
+                <rect x="203" y="152" width="20" height="20" rx="4"/>
+                <rect x="203" y="192" width="20" height="20" rx="4"/>
+                <polyline points="207,202 211,207 221,197"/>
+                <!-- Text lines col 1 -->
+                <line x1="55" y1="82" x2="105" y2="82" stroke-linecap="round"/>
+                <line x1="55" y1="122" x2="100" y2="122" stroke-linecap="round"/>
+                <line x1="55" y1="162" x2="108" y2="162" stroke-linecap="round"/>
+                <line x1="55" y1="202" x2="95" y2="202" stroke-linecap="round"/>
+                <line x1="55" y1="232" x2="110" y2="232" stroke-linecap="round"/>
+            </svg>
+        </div>
+
+        <!-- Decorative blur -->
+        <div class="absolute top-0 right-0 w-[400px] h-[400px] bg-emerald-200/40 rounded-full blur-3xl translate-x-1/3 -translate-y-1/4 pointer-events-none"></div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-6">
+
+            <!-- Breadcrumb -->
+            <div class="flex items-center gap-2 text-sm text-slate-400 mb-6">
+                <span>Strona główna</span>
+                <span>/</span>
+                <span>Biuro rachunkowe</span>
+                <span>/</span>
+                <span class="text-slate-600 font-medium">Usługi księgowe</span>
+            </div>
+
+            <div class="max-w-3xl">
+                <h1 class="text-4xl md:text-6xl font-medium tracking-tight mb-6 leading-[1.1] text-slate-900">
+                    Rozwiązania księgowe dla firm, które <span class="text-emerald-500">chcą mieć porządek</span> i spokój w biznesie
+                </h1>
+                <p class="text-base text-slate-500 mb-8 leading-relaxed max-w-xl">
+                    Zapewniamy kompleksową obsługę księgową firm o różnej skali działalności. Przejmujemy
+                    odpowiedzialność za poprawność, terminowość i ciągłość procesów księgowych, aby nasi
+                    klienci mogli skupić się na prowadzeniu i rozwoju biznesu.
+                </p>
+                <div class="flex flex-wrap items-center gap-4">
+                    <a href="#" class="px-7 py-3 rounded-full border border-slate-300 text-slate-700 text-sm font-medium hover:bg-white transition-colors">
+                        Poznaj ofertę
+                    </a>
+                    <a href="#" class="px-7 py-3 rounded-full bg-emerald-500 text-white text-sm font-medium hover:bg-emerald-600 transition-colors">
+                        Porozmawiajmy
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Twoja księgowość -->
+    <section class="py-20 bg-white overflow-hidden relative">
+        <!-- Decorative circle -->
+        <div class="absolute -right-32 top-1/2 -translate-y-1/2 w-[360px] h-[360px] rounded-full border-[50px] border-emerald-100 pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
+            <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+
+                <!-- Left: photo -->
+                <div class="rounded-2xl overflow-hidden shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=900"
+                        alt="Twoja księgowość w dobrych rękach"
+                        class="w-full h-full object-cover aspect-[4/3]">
+                </div>
+
+                <!-- Right: content -->
+                <div>
+                    <h2 class="text-4xl md:text-5xl font-medium tracking-tight text-slate-900 mb-6 leading-tight">
+                        Twoja księgowość<br>w <span class="text-emerald-500">dobrych rękach</span>
+                    </h2>
+                    <p class="text-base text-slate-500 leading-relaxed mb-6">
+                        Oferujemy kompleksową obsługę księgową działalności i spółek zarówno
+                        w zakresie prowadzenia pełnych ksiąg rachunkowych, jak
+                        i uproszczonych form ewidencji. Klienci mogą powierzyć nam całość
+                        procesów księgowych lub wybrane obszary wymagające wsparcia.
+                    </p>
+                    <p class="text-base text-slate-800 font-semibold leading-relaxed mb-8">
+                        Zakres współpracy dopasowujemy do skali działalności<br>
+                        i stopnia złożoności operacji finansowych.
+                    </p>
+                    <a href="#" class="inline-flex px-7 py-3.5 rounded-full bg-emerald-500 text-white text-sm font-medium hover:bg-emerald-600 transition-colors">
+                        Sprawdź jak wygląda współpraca
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Oferta rozwiązań księgowych -->
+    <section class="py-20 bg-white overflow-hidden relative">
+        <!-- Decorative circle arc -->
+        <div class="absolute -right-40 top-1/2 -translate-y-1/2 w-[380px] h-[380px] rounded-full border-[50px] border-emerald-100 pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
+            <h2 class="text-4xl md:text-5xl font-medium tracking-tight text-slate-900 mb-5">Oferta rozwiązań księgowych</h2>
+            <p class="text-lg text-slate-800 font-medium leading-relaxed mb-3 max-w-3xl">
+                Obsługujemy firmy na różnych formach rozliczeń zarówno w <span class="text-emerald-500">pełnej księgowości
+                (spółki)</span>, jak i w <span class="text-emerald-500">uproszczonych formach ewidencji (np. KPiR)</span>
+            </p>
+            <p class="text-sm text-slate-400 mb-10">
+                Poniżej pokazujemy przykładowy zakres działań. Jeśli potrzebujesz innej usługi chętnie porozmawiamy.
+            </p>
+
+            <!-- Grid -->
+            <div class="rounded-2xl border border-slate-200 overflow-hidden mb-10">
+                <div class="grid md:grid-cols-3">
+
+                    <!-- Row 1 -->
+                    <div class="p-8 border-b border-r border-slate-200">
+                        <i data-lucide="circle-check" stroke-width="1.5" class="w-7 h-7 text-emerald-500 mb-5"></i>
+                        <p class="text-base text-slate-800 font-medium leading-snug">Prowadenie ksiąg<br>rachunkowych</p>
+                    </div>
+                    <div class="p-8 border-b border-r border-slate-200">
+                        <i data-lucide="circle-check" stroke-width="1.5" class="w-7 h-7 text-emerald-500 mb-5"></i>
+                        <p class="text-base text-slate-800 font-medium leading-snug">Obliczanie podatków<br>i składanie deklaracji<br>podatkowych</p>
+                    </div>
+                    <div class="p-8 border-b border-slate-200">
+                        <i data-lucide="circle-check" stroke-width="1.5" class="w-7 h-7 text-emerald-500 mb-5"></i>
+                        <p class="text-base text-slate-800 font-medium leading-snug">Bieżące rozliczanie wyciągów<br>i kontrolowanie rozrachunków</p>
+                    </div>
+
+                    <!-- Row 2 -->
+                    <div class="p-8 border-b border-r border-slate-200">
+                        <i data-lucide="circle-check" stroke-width="1.5" class="w-7 h-7 text-emerald-500 mb-5"></i>
+                        <p class="text-base text-slate-800 font-medium leading-snug">Raportowanie zarządcze<br>i sprawozdawcze</p>
+                    </div>
+                    <div class="p-8 border-b border-r border-slate-200">
+                        <i data-lucide="circle-check" stroke-width="1.5" class="w-7 h-7 text-emerald-500 mb-5"></i>
+                        <p class="text-base text-slate-800 font-medium leading-snug">Raportowanie do instytucji<br>publicznych</p>
+                    </div>
+                    <div class="p-8 border-b border-slate-200">
+                        <i data-lucide="circle-check" stroke-width="1.5" class="w-7 h-7 text-emerald-500 mb-5"></i>
+                        <p class="text-base text-slate-800 font-medium leading-snug">Sporządzanie sprawozdań<br>finansowych oraz deklaracji<br>rocznych</p>
+                    </div>
+
+                    <!-- Row 3 -->
+                    <div class="p-8 border-r border-slate-200">
+                        <i data-lucide="circle-check" stroke-width="1.5" class="w-7 h-7 text-emerald-500 mb-5"></i>
+                        <p class="text-base text-slate-800 font-medium leading-snug">Reprezentowanie podczas<br>kontroli i czynności<br>sprawdzających</p>
+                    </div>
+                    <div class="p-8 border-r border-slate-200">
+                        <i data-lucide="circle-check" stroke-width="1.5" class="w-7 h-7 text-emerald-500 mb-5"></i>
+                        <p class="text-base text-slate-800 font-medium leading-snug">Obsługa niestandardowych<br>rozliczeń</p>
+                    </div>
+                    <div class="p-8">
+                        <i data-lucide="circle-check" stroke-width="1.5" class="w-7 h-7 text-emerald-500 mb-5"></i>
+                        <p class="text-base text-slate-800 font-medium leading-snug">Asystowanie i wsparcie<br>podczas audytu</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="#" class="px-7 py-3.5 rounded-full border border-slate-300 text-slate-700 text-sm font-medium hover:bg-slate-50 transition-colors">
+                    Sprawdź również rozwiązania kadrowe
+                </a>
+                <a href="#" class="px-7 py-3.5 rounded-full bg-emerald-500 text-white text-sm font-medium hover:bg-emerald-600 transition-colors">
+                    Oszacuj wstępną wycenę
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Banner -->
+    <section class="py-8 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="bg-[#48c279] rounded-3xl px-10 py-8 flex flex-col md:flex-row items-center justify-between gap-6">
+                <div class="flex items-center gap-6">
+                    <div class="shrink-0 hidden sm:block">
+                        <i data-lucide="message-square-text" stroke-width="1" class="w-16 h-16 text-white opacity-90"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl md:text-2xl font-bold text-white mb-1">Porozmawiajmy o obsłudze księgowej<br class="hidden md:block"> dla Twojej firmy</h3>
+                        <p class="text-white/75 text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod</p>
+                    </div>
+                </div>
+                <a href="#" class="shrink-0 px-7 py-3.5 rounded-full bg-white text-slate-800 text-sm font-semibold hover:bg-emerald-50 transition-colors whitespace-nowrap">
+                    Umów się na rozmowę
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Model Współpracy -->
+    <section class="py-24 bg-[#eef8f2] relative overflow-hidden">
+        <style>
+            .flip-card { perspective: 1000px; }
+            .flip-card-inner { position: relative; width: 100%; height: 100%; transform-style: preserve-3d; transition: transform 0.65s cubic-bezier(.4,0,.2,1); }
+            .flip-card:hover .flip-card-inner { transform: rotateY(180deg); }
+            .flip-card-front, .flip-card-back { position: absolute; inset: 0; backface-visibility: hidden; -webkit-backface-visibility: hidden; border-radius: 1.5rem; overflow: hidden; }
+            .flip-card-back { transform: rotateY(180deg); }
+        </style>
+
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-medium tracking-tight mb-6">Model współpracy</h2>
+                <p class="text-lg text-slate-500 max-w-2xl mx-auto">
+                    Możesz powierzyć nam całość procesów księgowych lub wybrane obszary wymagające uporządkowania.
+                    Dopasowujemy zakres wsparcia do realnej sytuacji Twojej firmy.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+
+                <!-- Karta 1: Kompleksowa obsługa -->
+                <div class="flip-card h-[380px]">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front bg-white border border-slate-200 flex flex-col items-center justify-center text-center p-12">
+                            <i data-lucide="network" stroke-width="1" class="w-24 h-24 text-emerald-500 mb-8 opacity-80"></i>
+                            <h3 class="text-3xl font-medium tracking-tight text-slate-900">Kompleksowa obsługa</h3>
+                        </div>
+                        <div class="flip-card-back bg-white border border-slate-200 flex flex-col justify-center p-12 relative">
+                            <i data-lucide="network" stroke-width="0.5" class="absolute right-6 top-6 w-36 h-36 text-emerald-100 pointer-events-none"></i>
+                            <h3 class="text-2xl font-medium tracking-tight text-slate-900 mb-5">Kompleksowa obsługa</h3>
+                            <p class="text-base text-slate-500 leading-relaxed">
+                                Obsługujemy proces end-to-end: od bieżącej ewidencji po zamknięcie miesiąca i raporty. Pracujesz z zespołem, który zapewnia zastępowalność i stały standard.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Karta 2: Outsourcing wybranych procesów -->
+                <div class="flip-card h-[380px]">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front relative flex items-center justify-center text-center">
+                            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=800" alt="Outsourcing" class="absolute inset-0 w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-slate-900/50"></div>
+                            <h3 class="text-3xl font-medium tracking-tight text-white relative z-10 px-8">Outsourcing wybranych<br>procesów</h3>
+                        </div>
+                        <div class="flip-card-back relative flex flex-col justify-center p-12">
+                            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=800" alt="Outsourcing" class="absolute inset-0 w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-slate-900/70"></div>
+                            <div class="relative z-10">
+                                <h3 class="text-2xl font-medium tracking-tight text-white mb-5">Outsourcing wybranych procesów</h3>
+                                <p class="text-base text-white/80 leading-relaxed">
+                                    Przejmujemy konkretne procesy i dowozimy je w ustalonym standardzie i harmonogramie. To rozwiązanie dla firm, które chcą wzmocnić wewnętrzny dział finansów bez rozbudowy etatów.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Jak wygląda bieżąca współpraca -->
+    <section class="py-32 bg-[#eef8f2] relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-96 h-96 border-[40px] border-emerald-200/40 rounded-full -translate-x-1/2 -translate-y-1/2 pointer-events-none"></div>
+        <div class="absolute bottom-0 right-0 w-[600px] h-[600px] border-[60px] border-emerald-200/30 rounded-full translate-x-1/4 translate-y-1/4 pointer-events-none"></div>
+        <div class="absolute top-1/2 left-0 w-[500px] h-[500px] border-[50px] border-emerald-200/40 rounded-full -translate-x-1/2 pointer-events-none"></div>
+
+        <div class="max-w-6xl mx-auto px-6 relative z-10">
+            <h2 class="text-4xl font-medium tracking-tight text-center mb-24 text-slate-900">Jak wygląda bieżąca współpraca</h2>
+
+            <div class="relative w-full max-w-5xl mx-auto">
+                <!-- Step 01 -->
+                <div class="relative w-[95%] sm:w-[90%] ml-auto">
+                    <div class="border-t border-r border-b border-slate-300 rounded-r-[3rem] sm:rounded-r-[4rem] p-10 sm:p-14 md:p-20 flex flex-col md:flex-row items-center gap-10 md:gap-20">
+                        <div class="absolute top-0 right-full w-screen h-px bg-slate-300"></div>
+                        <div class="text-[8rem] sm:text-[10rem] font-medium text-emerald-500 leading-none shrink-0 tracking-tighter">01</div>
+                        <div class="flex-1">
+                            <h3 class="text-2xl font-medium mb-5 text-slate-900">Indywidualna organizacja pracy</h3>
+                            <p class="text-slate-700 font-medium mb-4">W zależności od potrzeb możemy pracować:</p>
+                            <ul class="space-y-3 text-slate-600">
+                                <li class="flex items-start gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-emerald-500 shrink-0 mt-0.5"></i> na bieżąco – obsługując codzienne procesy księgowe lub kadrowe</li>
+                                <li class="flex items-start gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-emerald-500 shrink-0 mt-0.5"></i> w cyklach tygodniowych</li>
+                                <li class="flex items-start gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-emerald-500 shrink-0 mt-0.5"></i> w innych ustalonych odstępach czasu</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Step 02 -->
+                <div class="relative w-[95%] sm:w-[90%] mr-auto">
+                    <div class="border-t border-l border-b border-slate-300 rounded-l-[3rem] sm:rounded-l-[4rem] p-10 sm:p-14 md:p-20 flex flex-col md:flex-row items-center gap-10 md:gap-20 mt-[-1px]">
+                        <div class="flex-1 order-2 md:order-1 pl-0 md:pl-10">
+                            <h3 class="text-2xl font-medium mb-5 text-slate-900">Elastyczne zamknięcie miesiąca</h3>
+                            <p class="text-slate-700 font-medium mb-4 max-w-lg">Terminy zamknięcia miesiąca ustalamy indywidualnie z każdą firmą, uwzględniając jej wewnętrzne potrzeby raportowe oraz obowiązujące terminy podatkowe.</p>
+                            <ul class="space-y-3 text-slate-600 max-w-lg">
+                                <li class="flex items-start gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-emerald-500 shrink-0 mt-0.5"></i> część firm potrzebuje raportów finansowych do 20. dnia miesiąca</li>
+                                <li class="flex items-start gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-emerald-500 shrink-0 mt-0.5"></i> inne wymagają wyników już w 3. lub 4. dniu roboczym nowego miesiąca</li>
+                            </ul>
+                        </div>
+                        <div class="text-[8rem] sm:text-[10rem] font-medium text-transparent [-webkit-text-stroke:2px_#10b981] leading-none shrink-0 tracking-tighter order-1 md:order-2">02</div>
+                    </div>
+                </div>
+
+                <!-- Step 03 -->
+                <div class="relative w-[95%] sm:w-[90%] ml-auto">
+                    <div class="border-t border-r border-b border-slate-300 rounded-r-[3rem] sm:rounded-r-[4rem] p-10 sm:p-14 md:p-20 flex flex-col md:flex-row items-center gap-10 md:gap-20 mt-[-1px]">
+                        <div class="text-[8rem] sm:text-[10rem] font-medium text-emerald-500 leading-none shrink-0 tracking-tighter">03</div>
+                        <div class="flex-1">
+                            <h3 class="text-2xl font-medium mb-5 text-slate-900 leading-snug">Zakres i częstotliwość raportowania<br>ustalamy indywidualnie z każdym klientem.</h3>
+                            <p class="text-slate-700 font-medium mb-4">W standardzie klient otrzymuje:</p>
+                            <ul class="space-y-3 text-slate-600 mb-6">
+                                <li class="flex items-start gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-emerald-500 shrink-0 mt-0.5"></i> rachunek zysków i strat</li>
+                                <li class="flex items-start gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-emerald-500 shrink-0 mt-0.5"></i> bilans</li>
+                                <li class="flex items-start gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-emerald-500 shrink-0 mt-0.5"></i> zestawienie należności i zobowiązań</li>
+                            </ul>
+                            <p class="text-slate-600">
+                                W zależności od potrzeb przygotowujemy również dodatkowe<br>raporty księgowe, finansowe lub kadrowo-płacowe.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-20 text-center">
+                <a href="#" class="px-8 py-4 rounded-full bg-emerald-500 text-white text-lg font-medium hover:bg-emerald-600 transition-colors inline-block shadow-lg shadow-emerald-500/30">
+                    Poznaj więcej historii
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dlaczego firmy wybierają nasze rozwiązania księgowe -->
+    <section class="py-20 bg-white overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-4xl md:text-5xl font-medium tracking-tight text-slate-900 mb-12 max-w-2xl leading-tight">
+                Dlaczego firmy wybierają nasze<br>rozwiązania księgowe
+            </h2>
+        </div>
+
+        <!-- Slider wrapper -->
+        <div class="relative">
+            <div class="overflow-hidden pl-6 lg:pl-[max(24px,calc((100vw-1280px)/2+24px))]">
+                <div id="dlaczego-track" class="flex gap-6 transition-transform duration-500 ease-in-out">
+
+                    <!-- Card 1: Jakość potwierdzona standardami -->
+                    <div class="bg-white rounded-2xl p-8 flex flex-col min-w-[calc(33.333%-12px)] lg:min-w-[30%] border border-slate-200">
+                        <i data-lucide="badge-check" stroke-width="1" class="w-14 h-14 text-emerald-500 mb-8"></i>
+                        <h3 class="text-xl font-bold text-slate-900 mb-3 leading-snug">Jakość potwierdzona<br>standardami</h3>
+                        <p class="text-sm text-slate-500 leading-relaxed">
+                            Pracujemy zgodnie z normą ISO 9001 — systematyczne procesy, kontrola jakości i ciągłe doskonalenie usług.
+                        </p>
+                    </div>
+
+                    <!-- Card 2: Nowoczesne i elastyczne podejście (green) -->
+                    <div class="bg-[#48c279] rounded-2xl p-8 flex flex-col min-w-[calc(33.333%-12px)] lg:min-w-[30%]">
+                        <i data-lucide="file-text" stroke-width="1" class="w-14 h-14 text-white/80 mb-8"></i>
+                        <h3 class="text-xl font-bold text-white mb-3 leading-snug">Nowoczesne i elastyczne<br>podejście</h3>
+                        <p class="text-sm text-white/75 leading-relaxed">
+                            Dopasowujemy narzędzia i zakres współpracy do realnych potrzeb Twojej firmy – bez zbędnej biurokracji.
+                        </p>
+                    </div>
+
+                    <!-- Card 3: Business continuity -->
+                    <div class="bg-white rounded-2xl p-8 flex flex-col min-w-[calc(33.333%-12px)] lg:min-w-[30%] border border-slate-200">
+                        <i data-lucide="refresh-cw" stroke-width="1" class="w-14 h-14 text-emerald-500 mb-8"></i>
+                        <h3 class="text-xl font-bold text-slate-900 mb-3 leading-snug">Business continuity</h3>
+                        <p class="text-sm text-slate-500 leading-relaxed">
+                            Zespołowy model pracy gwarantuje ciągłość obsługi — urlopy i rotacja pracowników nie wpływają na jakość Twojej księgowości.
+                        </p>
+                    </div>
+
+                    <!-- Card 4: Bezpieczeństwo danych -->
+                    <div class="bg-white rounded-2xl p-8 flex flex-col min-w-[calc(33.333%-12px)] lg:min-w-[30%] border border-slate-200">
+                        <i data-lucide="shield-check" stroke-width="1" class="w-14 h-14 text-emerald-500 mb-8"></i>
+                        <h3 class="text-xl font-bold text-slate-900 mb-3 leading-snug">Bezpieczeństwo danych</h3>
+                        <p class="text-sm text-slate-500 leading-relaxed">
+                            Dane klientów chronimy zgodnie z normą ISO 27001 — wdrożone procedury, szyfrowanie i regularne audyty bezpieczeństwa.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Arrow buttons -->
+            <button id="dlaczego-next"
+                class="absolute right-6 top-1/2 -translate-y-1/2 w-14 h-14 rounded-full bg-emerald-500 text-white flex items-center justify-center shadow-lg hover:bg-emerald-600 transition-colors z-10">
+                <i data-lucide="chevron-right" class="w-6 h-6 stroke-[2]"></i>
+            </button>
+            <button id="dlaczego-prev"
+                class="absolute left-6 top-1/2 -translate-y-1/2 w-14 h-14 rounded-full bg-white text-slate-400 border border-slate-200 flex items-center justify-center shadow hover:bg-slate-50 transition-colors z-10 opacity-0 pointer-events-none">
+                <i data-lucide="chevron-left" class="w-6 h-6 stroke-[2]"></i>
+            </button>
+        </div>
+    </section>
+    <script>
+        (function () {
+            const track = document.getElementById('dlaczego-track');
+            const nextBtn = document.getElementById('dlaczego-next');
+            const prevBtn = document.getElementById('dlaczego-prev');
+            if (!track) return;
+
+            const cards = track.querySelectorAll(':scope > div');
+            const total = cards.length;
+            const visible = 3;
+            const max = total - visible;
+            let current = 0;
+
+            function update() {
+                const cardWidth = cards[0].offsetWidth + 24;
+                track.style.transform = `translateX(-${current * cardWidth}px)`;
+                prevBtn.classList.toggle('opacity-0', current === 0);
+                prevBtn.classList.toggle('pointer-events-none', current === 0);
+                nextBtn.classList.toggle('opacity-0', current >= max);
+                nextBtn.classList.toggle('pointer-events-none', current >= max);
+            }
+
+            nextBtn.addEventListener('click', () => { if (current < max) { current++; update(); } });
+            prevBtn.addEventListener('click', () => { if (current > 0) { current--; update(); } });
+        })();
+    </script>
+
+    <!-- Kalkulator -->
+    <section class="py-20 bg-[#eef8f2]">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-2 gap-16 items-start">
+
+                <!-- Left: title + description -->
+                <div class="lg:pt-8">
+                    <h2 class="text-4xl md:text-5xl font-medium tracking-tight text-slate-900 mb-6 leading-tight">
+                        Kalkulator &ndash; oszacuj<br>wstępnie koszt obsługi
+                    </h2>
+                    <p class="text-base text-slate-500 leading-relaxed max-w-sm">
+                        Oszacuj wstępny koszt usług księgowych w kilka chwil. Wprowadź
+                        podstawowe informacje o swojej działalności, a my przygotujemy
+                        orientacyjną wycenę dopasowaną do Twoich potrzeb i skali biznesu.
+                    </p>
+                </div>
+
+                <!-- Right: calculator card -->
+                <div>
+                    <div class="bg-white rounded-2xl p-8 shadow-sm">
+
+                        <!-- Custom dropdown -->
+                        <div class="relative mb-8" id="kalk-dropdown-wrapper">
+                            <button id="kalk-dropdown-btn"
+                                class="w-full flex items-center justify-between px-5 py-4 border border-slate-200 rounded-xl text-slate-500 text-sm hover:border-slate-300 transition-colors bg-white"
+                                aria-haspopup="listbox" aria-expanded="false">
+                                <span id="kalk-selected-label">Wybierz z listy</span>
+                                <i data-lucide="chevron-down" class="w-5 h-5 text-slate-400 stroke-[1.5] shrink-0 transition-transform" id="kalk-chevron"></i>
+                            </button>
+
+                            <!-- Dropdown list -->
+                            <div id="kalk-dropdown-list"
+                                class="absolute top-full left-0 right-0 mt-2 bg-white border border-slate-200 rounded-xl shadow-lg z-20 overflow-hidden hidden">
+                                <button data-value="uproszczona" data-label="Księgowość uproszczona (KPiR, ewidencja ryczałtowa)"
+                                    class="kalk-option w-full text-left px-5 py-4 text-sm font-semibold text-slate-800 hover:bg-emerald-50 transition-colors border-b border-slate-100">
+                                    Księgowość uproszczona (KPiR, ewidencja ryczałtowa)
+                                </button>
+                                <button data-value="pelna" data-label="Pełna księgowość (KH)"
+                                    class="kalk-option w-full text-left px-5 py-4 text-sm text-slate-700 hover:bg-emerald-50 transition-colors">
+                                    Pełna księgowość (KH)
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Price display -->
+                        <div>
+                            <p class="text-sm text-slate-500 mb-1">Orientacyjna cena netto</p>
+                            <p class="text-4xl font-bold text-slate-900">
+                                <span id="kalk-price">0,00 zł</span>
+                                <span class="text-lg font-normal text-slate-400 ml-1">(netto)</span>
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <!-- Disclaimer -->
+                    <p class="mt-4 text-xs text-slate-400 leading-relaxed max-w-md">
+                        * to jest wstępny szacunek, każda oferta jest jednak indywidualnie rozpatrywana i odpowiednio wyceniana.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <script>
+        (function () {
+            const btn = document.getElementById('kalk-dropdown-btn');
+            const list = document.getElementById('kalk-dropdown-list');
+            const label = document.getElementById('kalk-selected-label');
+            const chevron = document.getElementById('kalk-chevron');
+            if (!btn) return;
+
+            btn.addEventListener('click', function () {
+                const isOpen = !list.classList.contains('hidden');
+                list.classList.toggle('hidden', isOpen);
+                chevron.style.transform = isOpen ? '' : 'rotate(180deg)';
+                btn.setAttribute('aria-expanded', String(!isOpen));
+            });
+
+            document.querySelectorAll('.kalk-option').forEach(function (opt) {
+                opt.addEventListener('click', function () {
+                    label.textContent = opt.dataset.label;
+                    label.classList.remove('text-slate-500');
+                    label.classList.add('text-slate-800');
+                    list.classList.add('hidden');
+                    chevron.style.transform = '';
+                    btn.setAttribute('aria-expanded', 'false');
+                });
+            });
+
+            document.addEventListener('click', function (e) {
+                if (!document.getElementById('kalk-dropdown-wrapper').contains(e.target)) {
+                    list.classList.add('hidden');
+                    chevron.style.transform = '';
+                    btn.setAttribute('aria-expanded', 'false');
+                }
+            });
+        })();
+    </script>
+
+    <!-- Historie naszych klientów -->
+    <section class="py-20 bg-white overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 mb-12">
+            <h2 class="text-4xl md:text-5xl font-medium tracking-tight text-slate-900">
+                Historie naszych klientów
+            </h2>
+        </div>
+
+        <!-- Slider -->
+        <div class="relative">
+            <div class="overflow-hidden pl-6 lg:pl-[max(24px,calc((100vw-1280px)/2+24px))]">
+                <div id="historie-track" class="flex gap-6 transition-transform duration-500 ease-in-out">
+
+                    <!-- Karta 1: HPC -->
+                    <div class="min-w-[85%] lg:min-w-[80%] grid lg:grid-cols-[2fr_3fr] items-center">
+                        <!-- Left: info -->
+                        <div class="p-10 flex flex-col">
+                            <img src="materialy_home/hpc.png" alt="HPC" class="h-10 w-auto object-contain object-left mb-8">
+                            <p class="text-sm font-bold text-slate-800 mb-2">Branża:</p>
+                            <div class="flex flex-wrap gap-2 mb-6">
+                                <span class="px-3 py-1 rounded-full border border-slate-300 text-xs text-slate-600">Geologia inżynierska</span>
+                                <span class="px-3 py-1 rounded-full border border-slate-300 text-xs text-slate-600">Ochrona środowiska</span>
+                            </div>
+                            <p class="text-sm font-bold text-slate-800 mb-2">Zakres współpracy:</p>
+                            <p class="text-sm text-slate-500 leading-relaxed mb-3">
+                                Usługi rachunkowe, kadry i płace, wsparcie w procesie audytu
+                            </p>
+                            <p class="text-sm text-slate-500 leading-relaxed mb-10">
+                                Po kilku zmianach głównej księgowej spółka potrzebowała szybkiego uporządkowania
+                                księgowości i bezpiecznego zamknięcia roku obrotowego.
+                            </p>
+                            <a href="#" class="inline-flex px-6 py-3 rounded-full bg-emerald-500 text-white text-sm font-medium hover:bg-emerald-600 transition-colors self-start">
+                                Poznaj więcej historii
+                            </a>
+                        </div>
+                        <!-- Right: photo with play button -->
+                        <div class="relative rounded-2xl overflow-hidden aspect-[4/3] w-full">
+                            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=1200"
+                                alt="HPC historia"
+                                class="absolute inset-0 w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-slate-900/20"></div>
+                            <button class="absolute inset-0 flex items-center justify-center group" aria-label="Odtwórz film">
+                                <div class="w-20 h-20 rounded-full bg-white/90 flex items-center justify-center shadow-xl group-hover:scale-110 transition-transform duration-200">
+                                    <i data-lucide="play" class="w-7 h-7 text-emerald-500 ml-1" fill="#10b981" stroke-width="0"></i>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Karta 2: Printbox -->
+                    <div class="min-w-[85%] lg:min-w-[80%] grid lg:grid-cols-[2fr_3fr] items-center">
+                        <!-- Left: info -->
+                        <div class="p-10 flex flex-col">
+                            <img src="materialy_home/printbox.png" alt="Printbox" class="h-10 w-auto object-contain object-left mb-8">
+                            <p class="text-sm font-bold text-slate-800 mb-2">Branża:</p>
+                            <div class="flex flex-wrap gap-2 mb-6">
+                                <span class="px-3 py-1 rounded-full border border-slate-300 text-xs text-slate-600">E-commerce</span>
+                                <span class="px-3 py-1 rounded-full border border-slate-300 text-xs text-slate-600">Technologia</span>
+                            </div>
+                            <p class="text-sm font-bold text-slate-800 mb-2">Zakres współpracy:</p>
+                            <p class="text-sm text-slate-500 leading-relaxed mb-3">
+                                Pełna księgowość, raportowanie zarządcze, wsparcie podczas audytu
+                            </p>
+                            <p class="text-sm text-slate-500 leading-relaxed mb-10">
+                                Dynamicznie rosnąca spółka technologiczna potrzebowała partnera, który zapewni
+                                rzetelną sprawozdawczość i gotowość do pozyskania inwestora.
+                            </p>
+                            <a href="#" class="inline-flex px-6 py-3 rounded-full bg-emerald-500 text-white text-sm font-medium hover:bg-emerald-600 transition-colors self-start">
+                                Poznaj więcej historii
+                            </a>
+                        </div>
+                        <!-- Right: photo with play button -->
+                        <div class="relative rounded-2xl overflow-hidden aspect-[4/3] w-full">
+                            <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=1200"
+                                alt="Printbox historia"
+                                class="absolute inset-0 w-full h-full object-cover">
+                            <div class="absolute inset-0 bg-slate-900/20"></div>
+                            <button class="absolute inset-0 flex items-center justify-center group" aria-label="Odtwórz film">
+                                <div class="w-20 h-20 rounded-full bg-white/90 flex items-center justify-center shadow-xl group-hover:scale-110 transition-transform duration-200">
+                                    <i data-lucide="play" class="w-7 h-7 text-emerald-500 ml-1" fill="#10b981" stroke-width="0"></i>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Navigation arrows — bottom right -->
+            <button id="historie-next"
+                class="absolute right-6 top-1/2 -translate-y-1/2 w-14 h-14 rounded-full bg-emerald-500 text-white flex items-center justify-center shadow-lg hover:bg-emerald-600 transition-colors z-10">
+                <i data-lucide="chevron-right" class="w-6 h-6 stroke-[2]"></i>
+            </button>
+            <button id="historie-prev"
+                class="absolute left-6 top-1/2 -translate-y-1/2 w-14 h-14 rounded-full bg-white text-slate-400 border border-slate-200 flex items-center justify-center shadow hover:bg-slate-50 transition-colors z-10 opacity-0 pointer-events-none">
+                <i data-lucide="chevron-left" class="w-6 h-6 stroke-[2]"></i>
+            </button>
+        </div>
+    </section>
+    <script>
+        (function () {
+            const track = document.getElementById('historie-track');
+            const nextBtn = document.getElementById('historie-next');
+            const prevBtn = document.getElementById('historie-prev');
+            if (!track) return;
+
+            const cards = track.querySelectorAll(':scope > div');
+            const max = cards.length - 1;
+            let current = 0;
+
+            function update() {
+                const cardWidth = cards[0].offsetWidth + 24;
+                track.style.transform = `translateX(-${current * cardWidth}px)`;
+                prevBtn.classList.toggle('opacity-0', current === 0);
+                prevBtn.classList.toggle('pointer-events-none', current === 0);
+                nextBtn.classList.toggle('opacity-0', current >= max);
+                nextBtn.classList.toggle('pointer-events-none', current >= max);
+            }
+
+            nextBtn.addEventListener('click', () => { if (current < max) { current++; update(); } });
+            prevBtn.addEventListener('click', () => { if (current > 0) { current--; update(); } });
+        })();
+    </script>
+
+    <!-- Systemy księgowe -->
+    <section class="py-24 border-t border-slate-100 bg-white">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-4xl font-medium tracking-tight mb-6 text-slate-900">Obsługa wielu systemów<br>księgowych</h2>
+            <p class="text-lg text-slate-600 mb-16 leading-relaxed max-w-4xl">
+                Nasz zespół obsługuje wiele systemów księgowych, m.in. Comarch Optima, SAP czy Enova. Współpracę dostosowujemy do istniejących narzędzi i procesów
+                oraz wymagań klienta. Istnieje także możliwość pracy na preferowanych przez klienta programach księgowych.
+            </p>
+            <div class="flex flex-col md:flex-row items-center justify-between gap-12 w-full">
+                <img src="materialy_home/erp.png" alt="Comarch ERP Optima" class="h-10 lg:h-12 w-auto object-contain">
+                <img src="materialy_home/enova365.png" alt="enova365" class="h-10 lg:h-12 w-auto object-contain">
+                <img src="materialy_home/Symfonia.png" alt="Symfonia" class="h-10 lg:h-12 w-auto object-contain">
+                <img src="materialy_home/dynamics365.png" alt="Microsoft Dynamics 365" class="h-12 lg:h-16 w-auto object-contain">
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="py-16 lg:py-24 px-6 lg:px-12 bg-[#eef8f2]">
+        <div class="max-w-7xl mx-auto">
+
+            <!-- Header -->
+            <div class="flex items-center justify-between mb-10">
+                <h2 class="text-3xl lg:text-4xl font-bold tracking-tight text-slate-900">Blog</h2>
+                <a href="#" class="inline-flex items-center gap-1.5 text-sm font-medium text-slate-600 hover:text-[#48c279] transition-colors group">
+                    Wszystkie wpisy
+                    <i data-lucide="arrow-up-right" class="w-4 h-4 stroke-[2] text-[#48c279] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"></i>
+                </a>
+            </div>
+
+            <!-- 3-column grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+                <!-- Article 1 -->
+                <article class="group cursor-pointer flex flex-col">
+                    <div class="rounded-2xl overflow-hidden aspect-[4/3] mb-5">
+                        <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/917d6f93-fb36-439a-8c48-884b67b35381_1600w.jpg"
+                            alt="Potrącenia z zasiłków"
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <span class="inline-block self-start px-3 py-1 rounded-full border border-slate-300 text-xs text-slate-600 mb-4">Informacje podatkowo-księgowe</span>
+                    <h3 class="text-lg font-bold text-slate-900 leading-snug mb-3">
+                        Potrącenia z zasiłków w 2026 r. Praktyczny przewodnik dla działów kad
+                    </h3>
+                    <p class="text-sm text-slate-500 leading-relaxed mb-5 line-clamp-3">
+                        Wierzyciel lub komornik może zapukać do drzwi pracodawcy, gdy pracownik nie reguluje swoich zobowiązań.
+                    </p>
+                    <a href="#" class="mt-auto inline-flex text-sm font-medium text-slate-800 border-b border-slate-800 pb-0.5 self-start hover:text-[#48c279] hover:border-[#48c279] transition-colors">
+                        Przeczytaj artykuł
+                    </a>
+                </article>
+
+                <!-- Article 2 -->
+                <article class="group cursor-pointer flex flex-col">
+                    <div class="rounded-2xl overflow-hidden aspect-[4/3] mb-5">
+                        <img src="https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/4734259a-bad7-422f-981e-ce01e79184f2_1600w.jpg"
+                            alt="Praca zdalna"
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <span class="inline-block self-start px-3 py-1 rounded-full border border-slate-300 text-xs text-slate-600 mb-4">Informacje podatkowo-księgowe</span>
+                    <h3 class="text-lg font-bold text-slate-900 leading-snug mb-3">
+                        Praca zdalna — czy pracownikowi należy się ekwiwalent lub ryczałt?
+                    </h3>
+                    <p class="text-sm text-slate-500 leading-relaxed mb-5 line-clamp-3">
+                        Od momentu wprowadzenia do Kodeksu pracy przepisów regulujących pracę zdalną wielu pracodawców zastanawia się
+                    </p>
+                    <a href="#" class="mt-auto inline-flex text-sm font-medium text-slate-800 border-b border-slate-800 pb-0.5 self-start hover:text-[#48c279] hover:border-[#48c279] transition-colors">
+                        Przeczytaj artykuł
+                    </a>
+                </article>
+
+                <!-- Article 3 -->
+                <article class="group cursor-pointer flex flex-col">
+                    <div class="rounded-2xl overflow-hidden aspect-[4/3] mb-5">
+                        <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80"
+                            alt="Wynagrodzenie"
+                            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <span class="inline-block self-start px-3 py-1 rounded-full border border-slate-300 text-xs text-slate-600 mb-4">Informacje podatkowo-księgowe</span>
+                    <h3 class="text-lg font-bold text-slate-900 leading-snug mb-3">
+                        Wynagrodzenie brutto a netto w 2026 roku — jak poprawnie wyliczyć swoją pensję?
+                    </h3>
+                    <p class="text-sm text-slate-500 leading-relaxed mb-5 line-clamp-3">
+                        Jednym z najczęściej pojawiających się tematów w rozmowach o pracy i wynagrodzeniu jest różnica pomiędzy kwotą brutto a netto.
+                    </p>
+                    <a href="#" class="mt-auto inline-flex text-sm font-medium text-slate-800 border-b border-slate-800 pb-0.5 self-start hover:text-[#48c279] hover:border-[#48c279] transition-colors">
+                        Przeczytaj artykuł
+                    </a>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-white px-6 lg:px-12 pt-0 pb-0">
+        <div class="max-w-[1400px] mx-auto">
+            <div class="border-b border-white/10 py-12 sm:py-16 lg:py-20 flex flex-col lg:flex-row lg:items-center justify-between gap-8 sm:gap-10">
+                <div class="max-w-2xl">
+                    <span class="text-[#48c279] uppercase tracking-widest text-sm font-bold mb-4 block">Zacznij teraz</span>
+                    <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight leading-tight">
+                        Dołącz do grona naszych<br>klientów i rozwijaj biznes<br><span class="text-[#48c279]">bez stresu</span>
+                    </h2>
+                </div>
+                <div class="flex flex-col sm:flex-row gap-4 shrink-0">
+                    <a href="#" class="inline-flex items-center gap-2 bg-[#48c279] text-white px-8 py-4 rounded-full text-base font-bold hover:bg-[#3ea868] hover:shadow-lg hover:shadow-[#48c279]/30 transition-all duration-300 group">
+                        Umów rozmowę
+                        <i data-lucide="arrow-right" class="w-5 h-5 group-hover:translate-x-1 transition-transform"></i>
+                    </a>
+                    <a href="#" class="inline-flex items-center gap-2 border border-white/20 text-white px-8 py-4 rounded-full text-base font-semibold hover:bg-white/10 transition-all duration-300">
+                        Poznaj ofertę
+                    </a>
+                </div>
+            </div>
+
+            <div class="py-10 sm:py-12 lg:py-14 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6 sm:gap-8 lg:gap-10">
+                <div class="col-span-2 md:col-span-4 lg:col-span-1 flex flex-col gap-6">
+                    <a href="#" class="flex items-center gap-2 text-white">
+                        <i data-lucide="leaf" class="text-[#48c279] w-7 h-7 stroke-[1.5]"></i>
+                        <span class="text-xl font-bold tracking-widest uppercase">Meritoros</span>
+                    </a>
+                    <p class="text-slate-400 text-sm font-light leading-relaxed max-w-[200px]">
+                        Profesjonalne biuro rachunkowe i BPO dla firm z ambicjami.
+                    </p>
+                    <div class="flex items-center gap-2">
+                        <a href="#" class="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#48c279] transition-colors duration-300">
+                            <i data-lucide="facebook" class="w-4 h-4 stroke-[1.5]"></i>
+                        </a>
+                        <a href="#" class="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#48c279] transition-colors duration-300">
+                            <i data-lucide="instagram" class="w-4 h-4 stroke-[1.5]"></i>
+                        </a>
+                        <a href="#" class="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#48c279] transition-colors duration-300">
+                            <i data-lucide="linkedin" class="w-4 h-4 stroke-[1.5]"></i>
+                        </a>
+                        <a href="#" class="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center hover:bg-[#48c279] transition-colors duration-300">
+                            <i data-lucide="youtube" class="w-4 h-4 stroke-[1.5]"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-xs uppercase tracking-widest font-bold text-slate-400 mb-5">Mapa strony</h4>
+                    <ul class="space-y-3 text-sm text-slate-300">
+                        <li><a href="#" class="hover:text-white hover:translate-x-0.5 transition-all inline-block">Biuro rachunkowe</a></li>
+                        <li><a href="#" class="hover:text-white hover:translate-x-0.5 transition-all inline-block">BPO</a></li>
+                        <li><a href="#" class="hover:text-white hover:translate-x-0.5 transition-all inline-block">O nas</a></li>
+                        <li><a href="#" class="hover:text-white hover:translate-x-0.5 transition-all inline-block">Odkryj</a></li>
+                        <li><a href="#" class="hover:text-white hover:translate-x-0.5 transition-all inline-block">Kariera</a></li>
+                        <li><a href="#" class="hover:text-white hover:translate-x-0.5 transition-all inline-block">Kontakt</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xs uppercase tracking-widest font-bold text-slate-400 mb-5">Usługi</h4>
+                    <ul class="space-y-3 text-sm text-slate-300">
+                        <li><a href="#" class="hover:text-white hover:translate-x-0.5 transition-all inline-block">Usługi księgowe</a></li>
+                        <li><a href="#" class="hover:text-white hover:translate-x-0.5 transition-all inline-block">Kadry i płace</a></li>
+                        <li><a href="#" class="hover:text-white hover:translate-x-0.5 transition-all inline-block">Fundacje rodzinne</a></li>
+                        <li><a href="#" class="hover:text-white hover:translate-x-0.5 transition-all inline-block">Skup biur rachunkowych</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xs uppercase tracking-widest font-bold text-slate-400 mb-5">Informacje</h4>
+                    <ul class="space-y-3 text-sm text-slate-300">
+                        <li><a href="#" class="hover:text-white hover:translate-x-0.5 transition-all inline-block">Polityka prywatności</a></li>
+                        <li><a href="#" class="hover:text-white hover:translate-x-0.5 transition-all inline-block">Regulamin newslettera</a></li>
+                        <li><a href="#" class="hover:text-white hover:translate-x-0.5 transition-all inline-block">Blog</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xs uppercase tracking-widest font-bold text-slate-400 mb-5">Kontakt</h4>
+                    <ul class="space-y-3 text-sm text-slate-300">
+                        <li class="flex items-start gap-2">
+                            <i data-lucide="map-pin" class="w-4 h-4 text-[#48c279] mt-0.5 shrink-0 stroke-[1.5]"></i>
+                            <span>Aleja Pokoju 62/8,<br>Kraków</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i data-lucide="phone" class="w-4 h-4 text-[#48c279] shrink-0 stroke-[1.5]"></i>
+                            <a href="tel:+48000000000" class="hover:text-white transition-colors">+48 000 000 000</a>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i data-lucide="mail" class="w-4 h-4 text-[#48c279] shrink-0 stroke-[1.5]"></i>
+                            <a href="mailto:biuro@meritoros.pl" class="hover:text-white transition-colors">biuro@meritoros.pl</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="flex flex-col md:flex-row items-center justify-between text-xs text-slate-500 py-6 border-t border-white/10 gap-4">
+                <p>© 2026 Meritoros SA. Wszelkie prawa zastrzeżone.</p>
+                <p>Projekt i realizacja: <a href="#" class="text-slate-400 hover:text-white transition-colors">Web-Canvas</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+
+</body></html>
